@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CarWorld</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Cars</a>
+            <a href="#">Configure</a>
+        </nav>
+    </header>
+    <main>
+        <section id="car-grid">
+            <div class="car-card" data-id="1">
+                <img src="https://picsum.photos/seed/car-red-sedan/600/400" alt="Red Sedan">
+                <h2>Model X</h2>
+                <p>Manufacturer: Toyota</p>
+                <p>$35,000</p>
+                <button onclick="selectCar(1)">Configure</button>
+            </div>
+            <div class="car-card" data-id="2">
+                <img src="https://picsum.photos/seed/car-blue-suv/600/400" alt="Blue SUV">
+                <h2>Model Y</h2>
+                <p>Manufacturer: Ford</p>
+                <p>$42,000</p>
+                <button onclick="selectCar(2)">Configure</button>
+            </div>
+        </section>
+        <section id="configurator" style="display:none;">
+            <h2>Customize Your Car</h2>
+            <div id="config-image">
+                <img src="https://picsum.photos/seed/car-default/600/400" alt="Car Preview">
+            </div>
+            <div id="config-options">
+                <label>Color:
+                    <select id="colorSelect">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="black">Black</option>
+                    </select>
+                </label>
+                <label>Engine:
+                    <select id="engineSelect">
+                        <option value="1.5L">1.5L</option>
+                        <option value="2.0L">2.0L</option>
+                        <option value="3.0L">3.0L</option>
+                    </select>
+                </label>
+                <label>Features:
+                    <input type="checkbox" id="feature1"> Sunroof
+                    <input type="checkbox" id="feature2"> Navigation
+                </label>
+                <div id="totalPrice">Total: $35,000</div>
+                <button onclick="submitOrder()">Buy Now</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Contact: info@carworld.com | Phone: (123) 456-7890</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
