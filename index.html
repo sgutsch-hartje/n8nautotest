@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contoura Bicycle Configurator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Contoura Bicycle Configurator</h1>
+    <img src="https://picsum.photos/seed/contoura-bike-urban/600/400" alt="Contoura Bike">
+  </header>
+  <main>
+    <section>
+      <h2>Configure Your Bicycle</h2>
+      <div class="component">
+        <label>Saddle:</label>
+        <select onchange="updatePreview()">
+          <option value="saddle-black">Black Saddle</option>
+          <option value="saddle-red">Red Saddle</option>
+        </select>
+      </div>
+      <div class="component">
+        <label>Handlebars:</label>
+        <select onchange="updatePreview()">
+          <option value="handlebars-ergonomic">Ergonomic Handlebars</option>
+          <option value="handlebars-compact">Compact Handlebars</option>
+        </select>
+      </div>
+      <div class="component">
+        <label>Lights:</label>
+        <select onchange="updatePreview()">
+          <option value="lights-basic">Basic Lights</option>
+          <option value="lights-advanced">Advanced Lights</option>
+        </select>
+      </div>
+      <div class="component">
+        <label>Battery:</label>
+        <select onchange="updatePreview()">
+          <option value="battery-10000">10,000mAh Battery</option>
+          <option value="battery-20000">20,000mAh Battery</option>
+        </select>
+      </div>
+      <div class="component">
+        <label>App:</label>
+        <select onchange="updatePreview()">
+          <option value="app-standard">Standard App</option>
+          <option value="app-pro">Pro App</option>
+        </select>
+      </div>
+    </section>
+    <section>
+      <h2>Preview</h2>
+      <div id="preview">
+        <img id="previewImage" src="https://picsum.photos/seed/contoura-bike-urban/600/400" alt="Preview">
+        <p id="previewText">Select components to see your configuration</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Contoura Bicycle</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
