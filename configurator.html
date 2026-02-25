@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Car Configurator</h1>
+    <div id="configurator">
+        <div id="car-info">
+            <h2 id="car-model"></h2>
+            <p id="car-price"></p>
+        </div>
+        <div class="config-section">
+            <h3>Color</h3>
+            <select id="color-select">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="black">Black</option>
+            </select>
+        </div>
+        <div class="config-section">
+            <h3>Engine</h3>
+            <select id="engine-select">
+                <option value="1.5L">1.5L</option>
+                <option value="2.0L">2.0L</option>
+                <option value="3.0L">3.0L</option>
+            </select>
+        </div>
+        <div class="config-section">
+            <h3>Extras</h3>
+            <label><input type="checkbox" id="sunroof"> Sunroof</label>
+            <label><input type="checkbox" id="navigation"> Navigation</label>
+        </div>
+        <div id="total-price">
+            <h3>Total: $<span id="total">0</span></h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
