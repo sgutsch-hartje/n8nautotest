@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+main {
+    padding: 20px;
+}
+#car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.car-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+.car-card img {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+}
+#configurator {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+#config-image img {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+#config-options label {
+    display: block;
+    margin: 15px 0 5px;
+}
+#totalPrice {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #555;
+}
